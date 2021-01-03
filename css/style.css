@@ -89,8 +89,9 @@ img {
 }
 
 .header {
-  padding: 1.34375em;
+  padding: 1.34375em 0;
   position: fixed;
+  height: 70px;
   top: 0;
   left: 0;
   right: 0;
@@ -136,5 +137,54 @@ img {
   text-transform: capitalize;
   display: block;
   line-height: 1.6875;
+}
+
+.top {
+  margin-top: 70px;
+  margin-bottom: 4.375em;
+}
+
+.top__inner {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  max-width: 1200px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.top__contents-wrapper {
+  position: relative;
+  padding-top: 55%;
+}
+
+@media screen and (min-width: 768px) {
+  .top__contents-wrapper {
+    background: url(../img/top.png) no-repeat 100% 100%/82.5% 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .top__contents-wrapper {
+    background: url(../img/top.png) no-repeat center/100% 100%;
+  }
+}
+
+.top__contents {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.top__contents {
+  padding: 4.5em 2.5em 4.8125em 0;
+  background: #fff;
+}
+
+.top__title {
+  font-size: 1.625em;
+  font-weight: normal;
+  margin-bottom: 0.2356em;
 }
 /*# sourceMappingURL=style.css.map */
