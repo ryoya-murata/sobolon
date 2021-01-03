@@ -332,3 +332,52 @@ $layer: (
     opacity: .06;
     z-index: 2;
 }
+
+// =======================
+//  Products
+// =======================
+
+.products__inner{
+    max-width: 940px;
+}
+
+.products__items{
+    margin-bottom: 3em;
+}
+
+.products-cards{
+    display: flex;
+}
+
+.products-cards__item{
+    flex: 0 1 calc(33.3333% - 10em/3);
+    margin-right: 5em;
+    font-size: 0.875em;
+
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.products-item__img-wrapper{
+    margin-bottom: 1.1875em;
+}
+
+.products-item__name{
+    line-height: 1.7143;
+    margin-bottom: 0.6875em;
+}
+
+.products-item__price{
+    color: #989898;
+}
+
+.products__button-wrapper{
+    text-align: center;
+}
+
+
+// =======================
+//  News
+// =======================
+
