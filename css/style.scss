@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+$font-color:#333333;
+$border-color:#E0E0E0;
+$primary-color:#3EA1D1;
+
+html{
+    font-size: 62.5%;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    font-family: 'Noto Serif JP', sans-serif;
+    color:$font-color;
+    width: 100%;
+    height: 100%;
+    line-height: 1.625;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+
+
+
+// =======================
+//  メディアクエリ
+// =======================
+
+$layout-width-inner: 1200px;
+
+$breakpoints: (
+  "sp": "screen and (max-width: 767px)",
+  "pc": "screen and (min-width: 768px)"
+);
+
+@mixin mq($breakpoint: sp) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+      @content;
+    }
+  }
+  
+
+// =======================
+//  共通部分
+// =======================
+
+
+.section{
+    padding: 7em 0;
+    width: 100%;
+
+    @include mq('sp'){
+        padding: 3em 0;
+    }
+}
+
+.section__inner{
+    max-width : $layout-width-inner;
+    box-sizing: content-box;
+    padding: 0 40px;
+    margin: 0 auto;
+
+    @include mq("sp"){
+        // padding: 0 15px;
+    }
+}
+
+
+
+.section__title{
+    font-size: 4em;
+    line-height: 1.7;
+    text-align: center;
+    text-transform: capitalize;
+    position: relative;
+    margin-bottom: 1.6em;
+    padding-bottom: 6px;
+
+    &::after{
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 1px;
+        background: $primary-color;
+    }
+    
+
+    @include mq('sp'){
+        font-size: 1.8em;
+    }
+}
+
+
+.button{
+    display: inline-block;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 1.1625rem 5.4rem;
+    transition: all .3s;
+    color: $primary-color;
+    background: #fff;
+    border: 1px solid $primary-color;
+
+    &:hover{
+        background: $primary-color;
+        color: #fff;
+    }
+
+    @include mq('sp'){
+        font-size: 1em;
+    }
+
+}
+
+
+
+
+
+
+
+// =======================
+//  z-index
+// =======================
+
+$layer: (
+  modal: 100,
+  drawer: 40,
+  sp-menu: 35,
+  floating: 30,
+  header: 20,
+  default: 1
+);
+

@@ -1,0 +1,90 @@
+html {
+  font-size: 62.5%;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Noto Serif JP', sans-serif;
+  color: #333333;
+  width: 100%;
+  height: 100%;
+  line-height: 1.625;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+
+.section {
+  padding: 7em 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .section {
+    padding: 3em 0;
+  }
+}
+
+.section__inner {
+  max-width: 1200px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.section__title {
+  font-size: 4em;
+  line-height: 1.7;
+  text-align: center;
+  text-transform: capitalize;
+  position: relative;
+  margin-bottom: 1.6em;
+  padding-bottom: 6px;
+}
+
+.section__title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 60px;
+  height: 1px;
+  background: #3EA1D1;
+}
+
+@media screen and (max-width: 767px) {
+  .section__title {
+    font-size: 1.8em;
+  }
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 1.1625rem 5.4rem;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  color: #3EA1D1;
+  background: #fff;
+  border: 1px solid #3EA1D1;
+}
+
+.button:hover {
+  background: #3EA1D1;
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .button {
+    font-size: 1em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
