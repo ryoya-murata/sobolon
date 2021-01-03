@@ -252,4 +252,34 @@ img {
   padding: 2.0137em 0;
   text-align: center;
 }
+
+.reason {
+  background: url(../img/bg1.png) no-repeat center/cover;
+  position: relative;
+  padding: 6.625em 0;
+}
+
+.reason__title {
+  font-size: 1.375em;
+  line-height: 1.6818;
+  color: #fff;
+  margin-bottom: 0.9044em;
+}
+
+.reason__desc {
+  line-height: 1.6875;
+  color: #fff;
+}
+
+.reason__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .06;
+  z-index: 2;
+}
 /*# sourceMappingURL=style.css.map */
