@@ -263,3 +263,38 @@ $layer: (
     margin-bottom: 1.455em;
 }
 
+
+// =======================
+//  feature
+// =======================
+
+.feature-cards{
+    display: flex;
+}
+
+.feature-cards__item{
+    flex: 0 1 calc(33.3333% -  11.375em/3);
+    margin-right: 5.6875em;
+    box-shadow: 3px 3px 15px #60606029;
+
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.feature-card__img-wrapper{
+    position: relative;
+    padding-top: 70.5882%;
+}
+
+.feature-card__img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.feature-card__text-wrapper{
+    padding: 2.0137em 0;
+    text-align: center;
+}
