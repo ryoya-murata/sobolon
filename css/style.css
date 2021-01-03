@@ -1,5 +1,5 @@
 html {
-  font-size: 62.5%;
+  font-size: 16px;
   width: 100%;
   height: 100%;
 }
@@ -19,7 +19,7 @@ img {
 }
 
 .section {
-  padding: 7em 0;
+  padding: 4.375em 0;
   width: 100%;
 }
 
@@ -38,7 +38,7 @@ img {
 }
 
 .section__title {
-  font-size: 4em;
+  font-size: 2.5em;
   line-height: 1.7;
   text-align: center;
   text-transform: capitalize;
@@ -68,8 +68,8 @@ img {
 .button {
   display: inline-block;
   text-align: center;
-  font-size: 1.4rem;
-  padding: 1.1625rem 5.4rem;
+  font-size: 0.875em;
+  padding: 0.785714em  3.85743em;
   -webkit-transition: all .3s;
   transition: all .3s;
   color: #3EA1D1;
@@ -86,5 +86,55 @@ img {
   .button {
     font-size: 1em;
   }
+}
+
+.header {
+  padding: 1.34375em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header__inner {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  max-width: 1200px;
+  padding: 0 40px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo-wrapper {
+  max-width: 120px;
+  width: 100%;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__item {
+  margin-right: 3em;
+}
+
+.header__item:last-child {
+  margin-right: 0;
+}
+
+.header__link {
+  text-transform: capitalize;
+  display: block;
+  line-height: 1.6875;
 }
 /*# sourceMappingURL=style.css.map */
