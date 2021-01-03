@@ -401,4 +401,35 @@ img {
 .news__button-wrapper {
   text-align: center;
 }
+
+.motto-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.motto-contents__img-wrapper {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.motto-contents__texts-wrapper {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 47%;
+          flex: 0 1 47%;
+  margin-right: 3%;
+}
+
+.motto-contents__title {
+  font-size: 1.75em;
+  margin-bottom: 1em;
+}
 /*# sourceMappingURL=style.css.map */

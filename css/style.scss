@@ -449,3 +449,27 @@ $layer: (
 .news__button-wrapper{
     text-align: center;
 }
+
+// =======================
+//  motto
+// =======================
+
+.motto-contents{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.motto-contents__img-wrapper{
+    flex: 0 1 50%;
+}
+
+.motto-contents__texts-wrapper{
+    flex: 0 1 47%;
+    margin-right: 3%;
+}
+
+.motto-contents__title{
+    font-size: 1.75em;
+    margin-bottom: 1em;
+}
