@@ -11,7 +11,7 @@ html{
 }
 
 body{
-    font-family: 'Noto Serif JP', sans-serif;
+    font-family:'Noto Serif JP', sans-serif;
     color:$font-color;
     width: 100%;
     height: 100%;
@@ -238,3 +238,28 @@ $layer: (
 .top__desc{
 
 }
+
+// =======================
+//  concept
+// =======================
+
+.concept__contents{
+    display: flex;
+    align-items: center;
+}
+
+.concept__img-wrapper{
+    flex: 0 1 50%;
+}
+
+.concept__texts-wrapper{
+    flex: 0 1 50%;
+    padding-left: 6.6667%;
+}
+
+.concept__title{
+    font-size: 1.25em;
+    line-height: 1.7;
+    margin-bottom: 1.455em;
+}
+

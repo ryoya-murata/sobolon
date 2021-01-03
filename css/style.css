@@ -187,4 +187,32 @@ img {
   font-weight: normal;
   margin-bottom: 0.2356em;
 }
+
+.concept__contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.concept__img-wrapper {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.concept__texts-wrapper {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding-left: 6.6667%;
+}
+
+.concept__title {
+  font-size: 1.25em;
+  line-height: 1.7;
+  margin-bottom: 1.455em;
+}
 /*# sourceMappingURL=style.css.map */
