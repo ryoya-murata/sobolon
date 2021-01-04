@@ -216,6 +216,7 @@
         </div><!-- /.section__inner -->
     </section><!-- /.section motto -->
 
+    <!-- contact -->
     <section class="section contact" id="contact">
         <div class="section__inner">
             <h2 class="section__title section__title--color_primary">contact</h2><!-- /.section__title section__title--color_primary -->
@@ -223,45 +224,47 @@
                 <p class="form__desc"><span class="form__caution">＊</span><!-- /.form__caution -->は入力必須項目です</p><!-- /.form__desc -->
                 <div class="form__item">
                     <div class="form__label-wrapper">
-                        <label for="" class="form__label">お名前</label><!-- /.form__label -->
+                        <label for="name" class="form__label">お名前</label><!-- /.form__label -->
                     </div><!-- /.form__label-wrapper -->
                     <div class="form__input-wrapper">
-                        <input type="text" class="form__input">
+                        <input type="text" class="form__input" name="name">
                     </div><!-- /.form__input-wrapper -->
                 </div><!-- /.form__item -->
                 <div class="form__item">
                     <div class="form__label-wrapper">
-                        <label for="" class="form__label">メールアドレス</label><!-- /.form__label -->
+                        <label for="" class="form__label" for="email">メールアドレス</label><!-- /.form__label -->
                     </div><!-- /.form__label-wrapper -->
                     <div class="form__input-wrapper">
-                        <input type="text" class="form__input">
+                        <input type="email" class="form__input" name="email">
                     </div><!-- /.form__input-wrapper -->
                 </div><!-- /.form__item -->
                 <div class="form__item">
                     <div class="form__label-wrapper">
                         <label for="" class="form__label">法人/個人の選択</label><!-- /.form__label -->
                     </div><!-- /.form__label-wrapper -->
-                    <div class="form__input-wrapper">
-                        <label  class="form__radio-wrapper">
-                            <input type="radio" name="radio" class="form__radio-input" value="法人" required checked>
+                    <div class="form__input-wrapper form__input-wrapper--radio">
+                        <label  class="form__radio-wrapper" for="radio1">
+                            <input type="radio" name="radio" class="form__radio-input" name="radio1" value="法人" required checked>
                             <span class="form__radio-label">法人</span>
                         </label>
-                        <label  class="form__radio-wrapper">
-                            <input type="radio" name="radio" class="form__radio-input" value="法人" required checked>
+                        <label  class="form__radio-wrapper" for="radio2">
+                            <input type="radio" name="radio" class="form__radio-input" name="radio2" value="個人" required >
                             <span class="form__radio-label">個人</span>
                         </label>
                     </div><!-- /.form__input-wrapper -->
                 </div><!-- /.form__item -->
-                <div class="form__item">
+                <div class="form__item form__item--textarea">
                     <div class="form__label-wrapper">
-                        <label for="" class="form__label">お問い合わせ内容</label><!-- /.form__label -->
+                        <label for="" class="form__label" for="contact">お問い合わせ内容</label><!-- /.form__label -->
                     </div><!-- /.form__label-wrapper -->
                     <div class="form__input-wrapper">
-                        <textarea name="" id="" cols="30" rows="10" class="form__textarea"></textarea><!-- /#.form__textarea -->
+                        <textarea name="contact" id=""  class="form__textarea"></textarea><!-- /#.form__textarea -->
                     </div><!-- /.form__input-wrapper -->
                 </div><!-- /.form__item -->
                 <div class="form__agree-wrapper">
-                    <label for="" class="form__agree-label"><input type="checkbox" class="form__agree-input"><span class="form__agree-caoution"><a href="" class="form__agree-link">プライバシーポリシー</a>に同意する。</label><!-- /.form__agree-label -->
+                    <label for="">
+                        <input type="checkbox" checked id="">HTM
+                    </label>
                 </div><!-- /.form__agree-wrapper -->
             </form><!-- /.form -->
             <div class="contact__button-wrapper">
