@@ -638,21 +638,60 @@ $layer: (
     text-align: center;
 }
 
-// .form__agree-input{
-//     // display: none;
+.form__agree-input{
+    display: none;
 
-//     &:checked{
-//         & + label::after{
-//             opacity: 1;
-//         }
-//     }
-// }
-
-.form__agree-caoution{
-    color: $primary-color;
-    border-bottom: 1px solid $primary-color;
+    &:checked + .form__agree-label::before{
+        width: 10px;
+        top: 0px;
+        left: 5px;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        background: transparent;
+    }
 }
 
+.form__agree-label{
+    display: inline-block;
+    position: relative;
+    padding-left: 30px; //チェックボックスのため
+
+    &::before{
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        transform: translateY(-50%);
+        width: 22px;
+        height: 22px;
+        background: #fff;
+        border: 1px solid $primary-color;
+        -webkit-transition: all .12s, border-color .08s;
+        transition: all .12s, border-color .08s;
+    }
+}
+
+.form__agree-caution{
+    color: $primary-color;
+    position: relative;
+
+    &::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 3px;
+        width: 100%;
+        height: 1px;
+        background: $primary-color;
+    }
+}
+
+.contact__button-wrapper{
+    text-align: center;
+}
 
 
 // =======================
