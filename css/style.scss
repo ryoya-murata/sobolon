@@ -602,6 +602,12 @@ body.fixed{
 //  News
 // =======================
 
+.section__inner--news{
+    @include mq('sp'){
+        padding: 0 2em;
+    }
+}
+
 .news__contents{
     max-width: 1040px;
     width: 100%;
@@ -620,12 +626,19 @@ body.fixed{
     padding-bottom: 1.375em;
     padding-top: 1.375em;
 
-    
+    @include mq('sp'){
+        display: block;
+    }
 }
 
 .news-card__thumbnail{
     flex: 0 1 25%;
     margin-right: 3.8462%;
+
+    @include mq('sp'){
+        margin-right: 0;
+        margin-bottom: 1.25em;
+    }
 }
 
 .news-card__contents{
@@ -659,6 +672,10 @@ body.fixed{
     font-size: 1.125em;
     line-height: 1.7222;
     margin-bottom: 0.6em;
+
+    @include mq('sp'){
+        font-size: 1em;
+    }
 }
 
 .news-card__desc{
