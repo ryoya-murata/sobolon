@@ -68,7 +68,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .section__title {
-    font-size: 1.8em;
+    font-size: 1.875em;
   }
 }
 
@@ -76,7 +76,7 @@ img {
   display: inline-block;
   text-align: center;
   font-size: 0.875em;
-  padding: 0.785714em  3.85743em;
+  padding: 0.785714em  4em;
   -webkit-transition: all .3s;
   transition: all .3s;
   color: #3EA1D1;
@@ -87,12 +87,6 @@ img {
 .button:hover {
   background: #3EA1D1;
   color: #fff;
-}
-
-@media screen and (max-width: 767px) {
-  .button {
-    font-size: 1em;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -310,6 +304,7 @@ body.fixed {
 @media screen and (max-width: 767px) {
   .top {
     margin-top: 60px;
+    margin-bottom: 2.2em;
   }
 }
 

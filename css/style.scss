@@ -94,7 +94,7 @@ $breakpoints: (
     
 
     @include mq('sp'){
-        font-size: 1.8em;
+        font-size: 1.875em;
     }
 }
 
@@ -103,7 +103,7 @@ $breakpoints: (
     display: inline-block;
     text-align: center;
     font-size: 0.875em;
-    padding: 0.785714em  3.85743em;
+    padding: 0.785714em  4em;
     transition: all .3s;
     color: $primary-color;
     background: #fff;
@@ -114,9 +114,6 @@ $breakpoints: (
         color: #fff;
     }
 
-    @include mq('sp'){
-        font-size: 1em;
-    }
 
 }
 
@@ -338,6 +335,7 @@ body.fixed{
 
     @include mq('sp'){
         margin-top: 60px;
+        margin-bottom: 2.2em;
     }
 }
 
