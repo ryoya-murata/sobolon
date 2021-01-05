@@ -696,20 +696,40 @@ body.fixed{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+
+    @include mq('sp'){
+        display: block;
+    }
 }
 
 .motto-contents__img-wrapper{
     flex: 0 1 50%;
+
+    @include mq('sp'){
+        margin-bottom: 2em;
+    }
 }
 
 .motto-contents__texts-wrapper{
     flex: 0 1 47%;
     margin-right: 3%;
+
+    @include mq('sp'){
+        margin-right: 0;
+    }
 }
 
 .motto-contents__title{
     font-size: 1.75em;
     margin-bottom: 1em;
+
+    @include mq('sp'){
+        font-size: 1.25em;
+    }
+}
+
+.motto-contents__desc{
+    font-size: 0.875em;
 }
 
 // =======================

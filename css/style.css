@@ -711,10 +711,22 @@ body.fixed {
           align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+  .motto-contents {
+    display: block;
+  }
+}
+
 .motto-contents__img-wrapper {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
+}
+
+@media screen and (max-width: 767px) {
+  .motto-contents__img-wrapper {
+    margin-bottom: 2em;
+  }
 }
 
 .motto-contents__texts-wrapper {
@@ -724,9 +736,25 @@ body.fixed {
   margin-right: 3%;
 }
 
+@media screen and (max-width: 767px) {
+  .motto-contents__texts-wrapper {
+    margin-right: 0;
+  }
+}
+
 .motto-contents__title {
   font-size: 1.75em;
   margin-bottom: 1em;
+}
+
+@media screen and (max-width: 767px) {
+  .motto-contents__title {
+    font-size: 1.25em;
+  }
+}
+
+.motto-contents__desc {
+  font-size: 0.875em;
 }
 
 .contact {
