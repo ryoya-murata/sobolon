@@ -140,11 +140,11 @@ $breakpoints: (
 // =======================
 
 $layer: (
-  modal: 100,
+  header: 100,
+  modal: 80,
   drawer: 40,
   sp-menu: 35,
   floating: 30,
-  header: 20,
   default: 1
 );
 
@@ -160,6 +160,7 @@ $layer: (
     top: 0;
     left: 0;
     right: 0;
+    z-index: map-get($layer, header);
 
     @include mq('sp'){
         height: 60px;
@@ -626,6 +627,8 @@ body.fixed{
     padding-bottom: 1.375em;
     padding-top: 1.375em;
 
+
+
     @include mq('sp'){
         display: block;
     }
@@ -1004,6 +1007,10 @@ body.fixed{
     display: flex;
     justify-content: center;
     margin-bottom: 2.1875em;
+
+    @include mq('sp'){
+        display: block;
+    }
 }
 
 .footer__link{
@@ -1012,6 +1019,10 @@ body.fixed{
 
 .footer__item:first-of-type{
     margin-right: 2em;
+
+    @include mq('sp'){
+        margin-right: 0;
+    }
 }
 
 .footer__sns-list{

@@ -108,6 +108,7 @@ img {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 100;
 }
 
 @media screen and (max-width: 767px) {
@@ -1046,12 +1047,24 @@ body.fixed {
   margin-bottom: 2.1875em;
 }
 
+@media screen and (max-width: 767px) {
+  .footer__list {
+    display: block;
+  }
+}
+
 .footer__link {
   font-size: 0.75em;
 }
 
 .footer__item:first-of-type {
   margin-right: 2em;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__item:first-of-type {
+    margin-right: 0;
+  }
 }
 
 .footer__sns-list {
