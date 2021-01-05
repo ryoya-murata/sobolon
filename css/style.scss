@@ -500,6 +500,11 @@ body.fixed{
     background: url(../img/bg1.png) no-repeat center / cover;
     position: relative;
     padding: 6.625em 0;
+
+    @include mq('sp'){
+        background: url(../img/bg.png) no-repeat 70% 80% / cover;
+        padding: 11em 0 3.5em;
+    }
 }
 
 .reason__title{
@@ -507,11 +512,20 @@ body.fixed{
     line-height: 1.6818;
     color: #fff;
     margin-bottom: 0.9044em;
+
+    @include mq('sp'){
+        font-size: 1.25em;
+        margin-bottom: 1.6em;
+    }
 }
 
 .reason__desc{
     line-height: 1.6875;
     color: #fff;
+
+    @include mq('sp'){
+        font-size: 0.875em;
+    }
 }
 
 .reason__overlay{

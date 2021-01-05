@@ -490,6 +490,13 @@ body.fixed {
   padding: 6.625em 0;
 }
 
+@media screen and (max-width: 767px) {
+  .reason {
+    background: url(../img/bg.png) no-repeat 70% 80%/cover;
+    padding: 11em 0 3.5em;
+  }
+}
+
 .reason__title {
   font-size: 1.375em;
   line-height: 1.6818;
@@ -497,9 +504,22 @@ body.fixed {
   margin-bottom: 0.9044em;
 }
 
+@media screen and (max-width: 767px) {
+  .reason__title {
+    font-size: 1.25em;
+    margin-bottom: 1.6em;
+  }
+}
+
 .reason__desc {
   line-height: 1.6875;
   color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .reason__desc {
+    font-size: 0.875em;
+  }
 }
 
 .reason__overlay {
