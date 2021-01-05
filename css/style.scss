@@ -454,6 +454,10 @@ body.fixed{
 
 .feature-cards{
     display: flex;
+
+    @include mq('sp'){
+        display: block;
+    }
 }
 
 .feature-cards__item{
@@ -463,6 +467,11 @@ body.fixed{
 
     &:last-child{
         margin-right: 0;
+    }
+
+    @include mq('sp'){
+        margin-right: 0;
+        margin-bottom: 3em;
     }
 }
 

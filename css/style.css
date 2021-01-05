@@ -440,6 +440,12 @@ body.fixed {
   display: flex;
 }
 
+@media screen and (max-width: 767px) {
+  .feature-cards {
+    display: block;
+  }
+}
+
 .feature-cards__item {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 calc(33.3333% -  11.375em/3);
@@ -451,6 +457,13 @@ body.fixed {
 
 .feature-cards__item:last-child {
   margin-right: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .feature-cards__item {
+    margin-right: 0;
+    margin-bottom: 3em;
+  }
 }
 
 .feature-card__img-wrapper {
