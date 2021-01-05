@@ -66,7 +66,7 @@ $breakpoints: (
     margin: 0 auto;
 
     @include mq("sp"){
-        // padding: 0 15px;
+        padding: 0 15px;
     }
 }
 
@@ -163,6 +163,10 @@ $layer: (
     top: 0;
     left: 0;
     right: 0;
+
+    @include mq('sp'){
+        height: 60px;
+    }
 }
 
 .header__inner{
@@ -331,6 +335,10 @@ body.fixed{
 .top{
     margin-top: 70px;
     margin-bottom: 4.375em;
+
+    @include mq('sp'){
+        margin-top: 60px;
+    }
 }
 
 .top__inner{
@@ -338,19 +346,38 @@ body.fixed{
     max-width: $layout-width-inner;
     padding: 0 40px;
     margin: 0 auto;
+
+    @include mq('sp'){
+        padding: 0 15px;
+    }
 }
 
 .top__contents-wrapper{
     position: relative;
-    padding-top: 55% ;
+}
+
+.top__bg-wrapper{
+    width: 82.5%;
+    margin-left: auto;
+
+    @include mq('sp'){
+        width: 100%;
+        margin-bottom: 1.9375em;
+    }
+}
+
+.top__bg{
+    width: 100%;
+    padding-top: 66.6667%;
 
     @include mq('pc'){
-       background: url(../img/top.png) no-repeat 100% 100% / 82.5% 100%;
+        background: url(../img/top.png) no-repeat center / 100% 100%;
     }
 
     @include mq('sp'){
-        background: url(../img/top.png) no-repeat center / 100% 100%;
-     }
+        padding-top: 120%;
+        background: url(../img/top.png) no-repeat 70% center / cover;
+    }
 }
 
 .top__contents{
@@ -358,19 +385,28 @@ body.fixed{
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    // display: block;
-    // position:static;
+    padding: 4.5em 2.5em 4.8125em 0;
+    background-color: #fff;
+    
+
+    @include mq('sp'){
+        position: static;
+        transform: translateY(0);
+        background-color: transparent;
+        padding: 0;
+    }
 }
 
-.top__contents{
-    padding: 4.5em 2.5em 4.8125em 0;
-    background: #fff;
-}
+
 
 .top__title{
     font-size: 1.625em;
     font-weight: normal;
-    margin-bottom: 0.2356em;
+    margin-bottom: 0.7308em;
+
+    @include mq('sp'){
+        margin-bottom: 0.8846em;
+    }
 }
 
 .top__desc{
