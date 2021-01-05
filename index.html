@@ -8,6 +8,13 @@
 
     <!-- FontAwesome -->
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <!-- destyle.css -->
+    <link rel="stylesheet" href="./css/destyle.css">
+    <!-- my css -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <!-- header -->
@@ -22,7 +29,7 @@
                     <li class="header__item"><a href="#feature" class="header__link">feature</a><!-- /.header__link --></li><!-- /.header__item -->
                     <li class="header__item"><a href="#products" class="header__link">products</a><!-- /.header__link --></li><!-- /.header__item -->
                     <li class="header__item"><a href="#news" class="header__link">news</a><!-- /.header__link --></li><!-- /.header__item -->
-                    <li class="header__item"><a href="#contact" class="header__link">#contact</a><!-- /.header__link --></li><!-- /.header__item -->
+                    <li class="header__item"><a href="#contact" class="header__link">contact</a><!-- /.header__link --></li><!-- /.header__item -->
                 </ul><!-- /.header__list -->
             </nav><!-- /.header__nav -->
         </div><!-- /.header__inner -->
@@ -31,12 +38,14 @@
     <!-- top -->
     <div class="top">
         <div class="top__inner">
-            <div class="top__contents">
-                <h2 class="top__title">
-                    “可愛い” で <br>地球を守る！
-                </h2><!-- /.top__title -->
-                <p class="top__desc">海洋マイクロプラスチックを素材とした<br>ハンドメイドアクセサリー「sobolon」</p><!-- /.top__desc -->
-            </div><!-- /.top__contents -->
+            <div class="top__contents-wrapper">
+                <div class="top__contents">
+                    <h2 class="top__title">
+                        “可愛い” で <br>地球を守る！
+                    </h2><!-- /.top__title -->
+                    <p class="top__desc">海洋マイクロプラスチックを素材とした<br>ハンドメイドアクセサリー「sobolon」</p><!-- /.top__desc -->
+                </div><!-- /.top__contents -->
+            </div><!-- /.top__contents-wrapper -->
         </div><!-- /.top__inner -->
     </div><!-- /.top -->
 
@@ -93,17 +102,17 @@
     <!-- resons -->
     <section class="section reason">
         <div class="section__inner reason__inner">
-            <h3 class="reson__title">消費者である私たちが、<br>地球環境のためにできることは何か？</h3><!-- /.reson__title -->
-            <p class="reson__desc">そんな視点からこのブランドは生まれました。<br>オシャレを楽しむ気持ちを大切にしながらも、<br>ただ可愛いだけじゃない環境にやさしいアクセサリーを選ぶ人が増えていったら…<br>その変化は少しずつ、だけども本質的に、<br>この世界をHappyに変えていくのだと、私たちは考えます。</p><!-- /.reson__desc -->
+            <h3 class="reason__title">消費者である私たちが、<br>地球環境のためにできることは何か？</h3><!-- /.reason__title -->
+            <p class="reason__desc">そんな視点からこのブランドは生まれました。<br>オシャレを楽しむ気持ちを大切にしながらも、<br>ただ可愛いだけじゃない環境にやさしいアクセサリーを選ぶ人が増えていったら…<br>その変化は少しずつ、だけども本質的に、<br>この世界をHappyに変えていくのだと、私たちは考えます。</p><!-- /.reason__desc -->
         </div><!-- /.section__inner reason__inner -->
-        <div class="reson__overlay"></div><!-- /.reson__overlay -->
+        <div class="reason__overlay"></div><!-- /.reason__overlay -->
     </section><!-- /.section reason -->
 
     <!-- products -->
-    <section class="section" id="products">
+    <section class="section products" id="products">
         <div class="section__inner products__inner">
             <h2 class="section__title">products</h2><!-- /.section__title -->
-            <div class="products-cards">
+            <div class="products-cards products__items">
                 <div class="products-cards__item products-item">
                     <div class="products-item__img-wrapper">
                         <img src="./img/product-1.png" alt="" class="product__img">
@@ -138,15 +147,18 @@
         </div><!-- /.section__inner products__inner -->
     </section><!-- /#products.section -->
 
+    <!-- News -->
     <section class="section news">
         <div class="section__inner">
             <h2 class="section__title">news</h2><!-- /.section__title -->
-            <div class="news-cards">
+            <div class="news-cards news__contents">
                 <div class="news-cards__item news-card">
                     <a href="#" class="news-card__link">
-                        <div class="news-card__img-wrapper">
-                            <img src="./img/news-1.png" alt="" class="news-card__img">
-                        </div><!-- /.news-card__img-wrapper -->
+                        <div class="news-card__thumbnail">
+                            <div class="news-card__img-wrapper">
+                                <img src="./img/news-1.png" alt="" class="news-card__img">
+                            </div><!-- /.news-card__img-wrapper -->
+                        </div><!-- /.news-card__thumbnail -->
                         <div class="news-card__contents">
                             <p class="news-card__time-wrapper"><time class="news-card__time-wrapper">2020年2月4日</time><!-- /.news-card__time-wrapper --></p><!-- /.news-card__time -->
                             <h3 class="news-card__title">き業展終了！次回は2/11(火)フェスタ出店します。</h3><!-- /.news-card__title -->
@@ -156,9 +168,11 @@
                 </div><!-- /.news-cards__item news-card -->
                 <div class="news-cards__item news-card">
                     <a href="#" class="news-card__link">
-                        <div class="news-card__img-wrapper">
-                            <img src="./img/news-2.png" alt="" class="news-card__img">
-                        </div><!-- /.news-card__img-wrapper -->
+                        <div class="news-card__thumbnail">
+                            <div class="news-card__img-wrapper">
+                                <img src="./img/news-2.png" alt="" class="news-card__img">
+                            </div><!-- /.news-card__img-wrapper -->
+                        </div><!-- /.news-card__thumbnail -->
                         <div class="news-card__contents">
                             <p class="news-card__time-wrapper"><time class="news-card__time-wrapper">2020年1月20日</time><!-- /.news-card__time-wrapper --></p><!-- /.news-card__time -->
                             <h3 class="news-card__title">“可愛い” で 地球を守る！ 海洋マイクロプラスチックを使ったハンドメイドアクセサリー屋さん 【sobolon】</h3><!-- /.news-card__title -->
@@ -168,9 +182,11 @@
                 </div><!-- /.news-cards__item news-card -->
                 <div class="news-cards__item news-card">
                     <a href="#" class="news-card__link">
-                        <div class="news-card__img-wrapper">
-                            <img src="./img/news-3.png" alt="" class="news-card__img">
-                        </div><!-- /.news-card__img-wrapper -->
+                        <div class="news-card__thumbnail">
+                            <div class="news-card__img-wrapper">
+                                <img src="./img/news-3.png" alt="" class="news-card__img">
+                            </div><!-- /.news-card__img-wrapper -->
+                        </div><!-- /.news-card__thumbnail -->
                         <div class="news-card__contents">
                             <p class="news-card__time-wrapper"><time class="news-card__time-wrapper">2020年11月23日</time><!-- /.news-card__time-wrapper --></p><!-- /.news-card__time -->
                             <h3 class="news-card__title">sobolonの矛盾</h3><!-- /.news-card__title -->
@@ -200,6 +216,7 @@
         </div><!-- /.section__inner -->
     </section><!-- /.section motto -->
 
+    <!-- contact -->
     <section class="section contact" id="contact">
         <div class="section__inner">
             <h2 class="section__title section__title--color_primary">contact</h2><!-- /.section__title section__title--color_primary -->
@@ -207,45 +224,46 @@
                 <p class="form__desc"><span class="form__caution">＊</span><!-- /.form__caution -->は入力必須項目です</p><!-- /.form__desc -->
                 <div class="form__item">
                     <div class="form__label-wrapper">
-                        <label for="" class="form__label">お名前</label><!-- /.form__label -->
+                        <label for="name" class="form__label">お名前</label><!-- /.form__label -->
                     </div><!-- /.form__label-wrapper -->
                     <div class="form__input-wrapper">
-                        <input type="text" class="form__input">
+                        <input type="text" class="form__input" name="name">
                     </div><!-- /.form__input-wrapper -->
                 </div><!-- /.form__item -->
                 <div class="form__item">
                     <div class="form__label-wrapper">
-                        <label for="" class="form__label">メールアドレス</label><!-- /.form__label -->
+                        <label for="" class="form__label" for="email">メールアドレス</label><!-- /.form__label -->
                     </div><!-- /.form__label-wrapper -->
                     <div class="form__input-wrapper">
-                        <input type="text" class="form__input">
+                        <input type="email" class="form__input" name="email">
                     </div><!-- /.form__input-wrapper -->
                 </div><!-- /.form__item -->
                 <div class="form__item">
                     <div class="form__label-wrapper">
                         <label for="" class="form__label">法人/個人の選択</label><!-- /.form__label -->
                     </div><!-- /.form__label-wrapper -->
-                    <div class="form__input-wrapper">
-                        <label  class="form__radio-wrapper">
+                    <div class="form__input-wrapper form__input-wrapper--radio">
+                        <label  class="form__radio-wrapper" ">
                             <input type="radio" name="radio" class="form__radio-input" value="法人" required checked>
                             <span class="form__radio-label">法人</span>
                         </label>
                         <label  class="form__radio-wrapper">
-                            <input type="radio" name="radio" class="form__radio-input" value="法人" required checked>
+                            <input type="radio" name="radio" class="form__radio-input" value="個人" required >
                             <span class="form__radio-label">個人</span>
                         </label>
                     </div><!-- /.form__input-wrapper -->
                 </div><!-- /.form__item -->
-                <div class="form__item">
+                <div class="form__item form__item--textarea">
                     <div class="form__label-wrapper">
-                        <label for="" class="form__label">お問い合わせ内容</label><!-- /.form__label -->
+                        <label for="" class="form__label" for="contact">お問い合わせ内容</label><!-- /.form__label -->
                     </div><!-- /.form__label-wrapper -->
                     <div class="form__input-wrapper">
-                        <textarea name="" id="" cols="30" rows="10" class="form__textarea"></textarea><!-- /#.form__textarea -->
+                        <textarea name="contact" id=""  class="form__textarea"></textarea><!-- /#.form__textarea -->
                     </div><!-- /.form__input-wrapper -->
                 </div><!-- /.form__item -->
                 <div class="form__agree-wrapper">
-                    <label for="" class="form__agree-label"><input type="checkbox" class="form__agree-input"><span class="form__agree-caoution"><a href="" class="form__agree-link">プライバシーポリシー</a>に同意する。</label><!-- /.form__agree-label -->
+                    <input id="agree" type="checkbox" class="form__agree-input">
+                    <label for="agree" class="form__agree-label"><span class="form__agree-caution"><a href="" class="form__agree-link">プライバシーポリシー</a><!-- /.form__agree-link --></span>に同意します<!-- /.form__agree-caution --></label><!-- /.form__agree-label -->
                 </div><!-- /.form__agree-wrapper -->
             </form><!-- /.form -->
             <div class="contact__button-wrapper">
@@ -259,14 +277,14 @@
         <div class="footer__logo-wrapper">
             <img src="./img/logo.png" alt="" class="footer__logo">
         </div><!-- /.footer__logo-wrapper -->
-        <ul class="footer list">
+        <ul class="footer__list">
             <li class="footer__item"><a href="#" class="footer__link">プライバシーポリシー</a><!-- /.footer__link --></li><!-- /.footer__item -->
             <li class="footer__item"><a href="#" class="footer__link">特定商取引法に基づく表記</a><!-- /.footer__link --></li><!-- /.footer__item -->
-        </ul><!-- /.footer list -->
+        </ul><!-- /.footer__list -->
         <ul class="footer__sns-list">
-            <li class="footer__sns-item"><a href="#" class="footer sns__link"><i class="fab fa-twitter"></i></a><!-- /.footer sns__link --></li><!-- /.footer__sns-item -->
-            <li class="footer__sns-item"><a href="#" class="footer sns__link"><i class="fab fa-instagram"></i></a><!-- /.footer sns__link --></li><!-- /.footer__sns-item -->
-            <li class="footer__sns-item"><a href="#" class="footer sns__link"><i class="fab fa-line"></i></a><!-- /.footer sns__link --></li><!-- /.footer__sns-item -->
+            <li class="footer__sns-item"><a href="#" class="footer__sns__link"><i class="fab fa-twitter fa-2x footer__sns-icon"></i></a><!-- /.footer sns__link --></li><!-- /.footer__sns-item -->
+            <li class="footer__sns-item"><a href="#" class="footer__sns__link"><i class="fab fa-instagram fa-2x footer__sns-icon"></i></a><!-- /.footer sns__link --></li><!-- /.footer__sns-item -->
+            <li class="footer__sns-item"><a href="#" class="footer__sns__link"><i class="fab fa-line fa-2x footer__sns-icon"></i></a><!-- /.footer sns__link --></li><!-- /.footer__sns-item -->
         </ul><!-- /.footer__sns-list -->
         <p class="footer__copyright">© 2020 sobolon All rights reserved</p><!-- /.footer__copyright -->
     </footer><!-- /.footer -->
