@@ -418,15 +418,27 @@ body.fixed{
 .concept__contents{
     display: flex;
     align-items: center;
+
+    @include mq('sp'){
+        display: block;
+    }
 }
 
 .concept__img-wrapper{
     flex: 0 1 50%;
+
+    @include mq('sp'){
+        margin-bottom: 2em;
+    }
 }
 
 .concept__texts-wrapper{
     flex: 0 1 50%;
     padding-left: 6.6667%;
+
+    @include mq('sp'){
+        padding-left: 0;
+    }
 }
 
 .concept__title{

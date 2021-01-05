@@ -397,10 +397,22 @@ body.fixed {
           align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+  .concept__contents {
+    display: block;
+  }
+}
+
 .concept__img-wrapper {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
+}
+
+@media screen and (max-width: 767px) {
+  .concept__img-wrapper {
+    margin-bottom: 2em;
+  }
 }
 
 .concept__texts-wrapper {
@@ -408,6 +420,12 @@ body.fixed {
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
   padding-left: 6.6667%;
+}
+
+@media screen and (max-width: 767px) {
+  .concept__texts-wrapper {
+    padding-left: 0;
+  }
 }
 
 .concept__title {
