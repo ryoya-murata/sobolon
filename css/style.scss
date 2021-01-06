@@ -442,6 +442,8 @@ $layer: (
 
     @include mq('sp'){
         display: block;
+        max-width: 340px;
+        margin: 0 auto;
     }
 }
 
