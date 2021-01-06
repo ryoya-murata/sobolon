@@ -688,6 +688,10 @@ img {
   text-align: center;
 }
 
+.motto {
+  margin-bottom: 3em;
+}
+
 .motto-contents {
   display: -webkit-box;
   display: -ms-flexbox;
