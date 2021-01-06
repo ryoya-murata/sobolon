@@ -209,6 +209,10 @@ $layer: (
     &:last-child{
         margin-right: 0;
     }
+
+    &:hover{
+        color: $primary-color;
+    }
 }
 
 .header__link{
@@ -216,10 +220,6 @@ $layer: (
     display: block;
     line-height: 1.6875;
     transition: all .3s;
-
-    &:hover{
-        color: $primary-color;
-    }
 }
 
 // ハンバーガーメニュー

@@ -174,16 +174,16 @@ img {
   margin-right: 0;
 }
 
+.header__item:hover {
+  color: #3EA1D1;
+}
+
 .header__link {
   text-transform: capitalize;
   display: block;
   line-height: 1.6875;
   -webkit-transition: all .3s;
   transition: all .3s;
-}
-
-.header__link:hover {
-  color: #3EA1D1;
 }
 
 .hamberger {
