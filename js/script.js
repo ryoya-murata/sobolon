@@ -71,3 +71,40 @@ $(document).ready(function () {
     })
 
   });
+
+  $(function(){
+    $(window).scroll(function(){
+        var adjust = $(".header").innerHeight();
+        var scrollTop = $(window).scrollTop() + 400 ;
+        var conceptTop = $(".concept").offset().top;
+        var conceptBottom = conceptTop + $(".concept").innerHeight();
+        var featureTop = $(".feature").offset().top;
+        var featureBottom = featureTop + $(".feature").innerHeight();
+        var reasonTop = $(".reason").offset().top;
+        var reasonBottom = reasonTop + $(".reason").innerHeight();
+        var productsTop = $(".products").offset().top;
+        var productsBottom = productsTop + $(".products").innerHeight();
+        var newsTop = $(".news").offset().top;
+        var newsBottom = newsTop + $(".news").innerHeight();
+        var mottoTop = $(".motto").offset().top;
+        var mottoBottom = mottoTop + $(".motto").innerHeight();
+        var contactTop = $(".contact").offset().top;
+        var contactBottom = contactTop + $(".contact").innerHeight();
+
+        if(scrollTop >= conceptTop && scrollTop <= conceptBottom){
+            $('.concept__contents').addClass('op-1').addClass('tr-after');
+        } else if (scrollTop >= featureTop && scrollTop <= featureBottom){
+           $('.feature-cards').addClass('op-1').addClass('tr-after');
+        } else if (scrollTop >= reasonTop && scrollTop <= reasonBottom){
+            $('.reason__inner').addClass('op-1').addClass('tr-after');
+        } else if (scrollTop >= productsTop && scrollTop <= productsBottom){
+            $('.products-cards').addClass('op-1').addClass('tr-after');
+        } else if (scrollTop >= newsTop && scrollTop <= newsBottom){
+            $('.news-cards').addClass('op-1').addClass('tr-after');
+        } else if(scrollTop >= mottoTop && scrollTop <= mottoBottom){
+            $('.motto-contents').addClass('op-1').addClass('tr-after');
+        } else if(scrollTop >= contactTop && scrollTop <= contactBottom){
+            $('.form').addClass('op-1').addClass('tr-after');
+        }
+    })
+})

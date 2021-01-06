@@ -101,6 +101,26 @@ img {
   }
 }
 
+.op-0 {
+  opacity: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.op-1 {
+  opacity: 1;
+}
+
+.tr-before {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.tr-after {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
 .header {
   padding: 1.34375em 0;
   position: fixed;
