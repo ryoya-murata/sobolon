@@ -1069,6 +1069,12 @@ img {
   background: #3EA1D1;
 }
 
+.button--submit:disabled {
+  background-color: #ccc;
+  border-color: #ccc;
+  color: #fff;
+}
+
 .footer {
   background: #F7F7F7;
   text-align: center;
