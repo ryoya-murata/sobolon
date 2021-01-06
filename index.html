@@ -244,55 +244,61 @@
     <section class="section contact" id="contact">
         <div class="section__inner">
             <h2 class="section__title section__title--color_primary">contact</h2><!-- /.section__title section__title--color_primary -->
-            <form action="" class="form">
+            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScTpUcHZbj0bIvmRE1_ZLV3UP3vAg1Iq-5M6OEbPmm6alO8fw/formResponse" class="form" id="form">
                 <p class="form__desc"><span class="form__caution">＊</span><!-- /.form__caution -->は入力必須項目です</p><!-- /.form__desc -->
                 <div class="form__item">
                     <div class="form__label-wrapper">
-                        <label for="name" class="form__label">お名前</label><!-- /.form__label -->
+                        <label class="form__label">お名前</label><!-- /.form__label -->
                     </div><!-- /.form__label-wrapper -->
                     <div class="form__input-wrapper">
-                        <input type="text" class="form__input" name="name">
+                        <input type="text" class="form__input" name="entry.110686375" value="" required>
                     </div><!-- /.form__input-wrapper -->
                 </div><!-- /.form__item -->
                 <div class="form__item">
                     <div class="form__label-wrapper">
-                        <label for="" class="form__label" for="email">メールアドレス</label><!-- /.form__label -->
+                        <label class="form__label" for="email">メールアドレス</label><!-- /.form__label -->
                     </div><!-- /.form__label-wrapper -->
                     <div class="form__input-wrapper">
-                        <input type="email" class="form__input" name="email">
+                        <input type="email" class="form__input" name="entry.790791613" value="" required>
                     </div><!-- /.form__input-wrapper -->
                 </div><!-- /.form__item -->
                 <div class="form__item">
                     <div class="form__label-wrapper">
-                        <label for="" class="form__label">法人/個人の選択</label><!-- /.form__label -->
+                        <label  class="form__label">法人/個人の選択</label><!-- /.form__label -->
                     </div><!-- /.form__label-wrapper -->
                     <div class="form__input-wrapper form__input-wrapper--radio">
-                        <label  class="form__radio-wrapper" ">
-                            <input type="radio" name="radio" class="form__radio-input" value="法人" required checked>
+                        <label  class="form__radio-wrapper" >
+                            <input type="radio" name="entry.2094813339" class="form__radio-input" value="法人" required checked>
                             <span class="form__radio-label">法人</span>
                         </label>
                         <label  class="form__radio-wrapper">
-                            <input type="radio" name="radio" class="form__radio-input" value="個人" required >
+                            <input type="radio" name="entry.2094813339" class="form__radio-input" value="個人" required>
                             <span class="form__radio-label">個人</span>
                         </label>
                     </div><!-- /.form__input-wrapper -->
                 </div><!-- /.form__item -->
                 <div class="form__item form__item--textarea">
                     <div class="form__label-wrapper">
-                        <label for="" class="form__label" for="contact">お問い合わせ内容</label><!-- /.form__label -->
+                        <label class="form__label" for="contact">お問い合わせ内容</label><!-- /.form__label -->
                     </div><!-- /.form__label-wrapper -->
                     <div class="form__input-wrapper">
-                        <textarea name="contact" id=""  class="form__textarea"></textarea><!-- /#.form__textarea -->
+                        <textarea name="entry.622939215"  class="form__textarea" required></textarea><!-- /#.form__textarea -->
                     </div><!-- /.form__input-wrapper -->
                 </div><!-- /.form__item -->
                 <div class="form__agree-wrapper">
-                    <input id="agree" type="checkbox" class="form__agree-input">
+                    <input id="agree" type="checkbox" class="form__agree-input" name="entry.1340125865" value="" required>
                     <label for="agree" class="form__agree-label"><span class="form__agree-caution"><a href="" class="form__agree-link">プライバシーポリシー</a><!-- /.form__agree-link --></span>に同意します<!-- /.form__agree-caution --></label><!-- /.form__agree-label -->
                 </div><!-- /.form__agree-wrapper -->
+                <div class="contact__button-wrapper">
+                    <button id="js-submit" class="button button--submit" type="submit" disabled>送信</button><!-- /#js-submit -->
+                </div><!-- /.contact__button-wrapper -->
             </form><!-- /.form -->
-            <div class="contact__button-wrapper">
-                <a href="#" class="button">送信</a><!-- /.button -->
-            </div><!-- /.contact__button-wrapper -->
+            <div class="form__messages-wrap">
+                <p class="form__end-message">お問い合わせありがとうございます
+                    <br>メッセージは正常に送信されました
+                </pid=><!-- /.form__end-message -->
+                <p" class="form__false-message">※送信に失敗しました</p><!-- /.form__false-message -->
+            </div><!-- /.form__messages-wrap -->
         </div><!-- /.section__inner -->
     </section><!-- /#contact.section -->
 
@@ -306,9 +312,9 @@
             <li class="footer__item"><a href="#" class="footer__link">特定商取引法に基づく表記</a><!-- /.footer__link --></li><!-- /.footer__item -->
         </ul><!-- /.footer__list -->
         <ul class="footer__sns-list">
-            <li class="footer__sns-item"><a href="#" class="footer__sns__link"><i class="fab fa-twitter fa-2x footer__sns-icon"></i></a><!-- /.footer sns__link --></li><!-- /.footer__sns-item -->
-            <li class="footer__sns-item"><a href="#" class="footer__sns__link"><i class="fab fa-instagram fa-2x footer__sns-icon"></i></a><!-- /.footer sns__link --></li><!-- /.footer__sns-item -->
-            <li class="footer__sns-item"><a href="#" class="footer__sns__link"><i class="fab fa-line fa-2x footer__sns-icon"></i></a><!-- /.footer sns__link --></li><!-- /.footer__sns-item -->
+            <li class="footer__sns-item"><a href="#" class="footer__sns-link"><i class="fab fa-twitter fa-2x footer__sns-icon"></i></a><!-- /.footer sns__link --></li><!-- /.footer__sns-item -->
+            <li class="footer__sns-item"><a href="#" class="footer__sns-link"><i class="fab fa-instagram fa-2x footer__sns-icon"></i></a><!-- /.footer sns__link --></li><!-- /.footer__sns-item -->
+            <li class="footer__sns-item"><a href="#" class="footer__sns-link"><i class="fab fa-line fa-2x footer__sns-icon"></i></a><!-- /.footer sns__link --></li><!-- /.footer__sns-item -->
         </ul><!-- /.footer__sns-list -->
         <p class="footer__copyright">© 2020 sobolon All rights reserved</p><!-- /.footer__copyright -->
     </footer><!-- /.footer -->

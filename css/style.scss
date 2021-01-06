@@ -1011,6 +1011,11 @@ $layer: (
     text-align: center;
 }
 
+.button--active{
+    color: #fff;
+    background: $primary-color;
+}
+
 
 // =======================
 //  footer
@@ -1043,6 +1048,10 @@ $layer: (
 
 .footer__link{
     font-size: 0.75em;
+
+    &:hover{
+        opacity: 0.7;
+    }
 }
 
 .footer__item:first-of-type{
@@ -1067,16 +1076,38 @@ $layer: (
     }
 }
 
-.footer__sns-link{
-    display: block;
-}
-
 .footer__sns-icon{
     color: $primary-color;
 }
+
+.footer__sns-link{
+    display: block;
+
+    &:hover{
+        opacity: 0.7;
+    }
+}
+
 
 .footer__copyright{
     font-size: 0.75em;
     color: #888888;
 }
 
+
+.form__end-message{
+    display: none;
+    padding: 1em 0;
+    background: #f8f9fa;
+    font-size: 1.125em;
+    text-align: center;
+}
+
+.form__false-message{
+    display: none;
+    padding: 1em 0;
+    background: #f8f9fa;
+    font-size: 1.125em;
+    text-align: center;
+    color: #ff0000;
+}
