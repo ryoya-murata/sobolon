@@ -16,6 +16,7 @@ body{
     width: 100%;
     height: 100%;
     line-height: 1.625;
+
 }
 
 img{
@@ -129,22 +130,22 @@ $breakpoints: (
     }
 }
 
-.op-0{
-    opacity: 0;
-    transition: all .5s;
-}
+// .op-0{
+//     opacity: 0;
+//     transition: all .5s;
+// }
 
-.op-1{
-    opacity: 1;
-}
+// .op-1{
+//     opacity: 1;
+// }
 
-.tr-before{
-    transform: translateY(20px);
-}
+// .tr-before{
+//     transform: translateY(20px);
+// }
 
-.tr-after{
-    transform: translateY(0px);
-}
+// .tr-after{
+//     transform: translateY(0px);
+// }
 
 
 
@@ -468,9 +469,11 @@ $layer: (
 }
 
 .feature-cards__item{
-    flex: 0 1 calc(33.3333% -  11.375em/3);
+    flex: 0 1 calc(33.3333% - 60px);
     margin-right: 5.6875em;
     box-shadow: 3px 3px 15px #60606029;
+
+    
 
     &:last-child{
         margin-right: 0;
@@ -480,6 +483,11 @@ $layer: (
         margin-right: 0;
         margin-bottom: 3em;
     }
+
+    @media all and (-ms-high-contrast:none){
+        flex: 0 1 30%;
+        margin-right: 5%;
+     }
 
     &:hover{
         .feature-card__img{
@@ -680,10 +688,15 @@ $layer: (
         margin-right: 0;
         margin-bottom: 1.25em;
     }
+
+    @media all and (-ms-high-contrast:none){
+        flex: 0 1 30%;
+        margin-right: 5%;
+     }
 }
 
 .news-card__contents{
-    flex: 0 1 calc(100% - 28.8462%);
+    flex: 0 1 71%;
 }
 
 .news-card__img-wrapper{
@@ -831,12 +844,14 @@ $layer: (
 
 .form__label-wrapper{
     flex: 0 1 173px;
-    margin-right: 0.9375em;
+    width: 173px!important;
+    margin-right: 15px;
     background: #3EA1D1B3;
     height: 100%;
     text-align: center;
     padding: .3em  0;
     position: relative;
+    
 
     &::after{
         position: absolute;
@@ -859,6 +874,14 @@ $layer: (
             display: none;
         }
     }
+
+    @media all and (-ms-high-contrast:none){
+       background: rgba(113, 187, 236,0.8);
+
+       &::after{
+        border-color: transparent transparent transparent rgba(113, 187, 236,0.8);
+       }
+     }
 }
 
 .form__label{
@@ -884,6 +907,10 @@ $layer: (
 .form__input-wrapper{
     flex: 0 2 calc(100% - 173px - 0.9375em);
     height: 100%;
+
+    @media all and (-ms-high-contrast:none){
+        flex: 0 2 70%;
+      }
 }
 
 .form__input {
@@ -924,8 +951,8 @@ $layer: (
 
 .form__input-wrapper--radio{
     flex: 0 2 auto;
-    box-shadow: 5px 6px 16px rgba(96, 96, 96, 0.16);
-    display: inline-block;
+    box-shadow: none;
+    display: block;
 }
 
 
@@ -936,7 +963,7 @@ $layer: (
 }
 
 .form__radio-label{
-    display: inline-block;
+    display: block;
     background-color: #fff;
     color: $primary-color;
     height: 100%;
@@ -951,13 +978,13 @@ $layer: (
     top: 0;
     left: 0;
     opacity: 0;
+    outline: none;
 
 
 
     &:checked + .form__radio-label{
         background-color: $primary-color;
         color: #fff;
-        border-radius: 1px;
     }
 
 }
@@ -1133,3 +1160,8 @@ $layer: (
     text-align: center;
     color: #ff0000;
 }
+
+/* IE10以降 */
+@media all and (-ms-high-contrast:none){
+    
+  }
