@@ -423,6 +423,8 @@ img {
 @media screen and (max-width: 767px) {
   .feature-cards {
     display: block;
+    max-width: 340px;
+    margin: 0 auto;
   }
 }
 
@@ -465,16 +467,37 @@ img {
 }
 
 .reason {
-  background: url(../img/bg1.png) no-repeat center/cover;
   position: relative;
   padding: 6.625em 0;
 }
 
+.reason::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .2;
+}
+
+@media screen and (min-width: 768px) {
+  .reason {
+    background: url(../img/bg.png) no-repeat center/cover;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .reason {
-    background: url(../img/bg.png) no-repeat 70% 80%/cover;
+    background: url(../img/bg1.png) no-repeat center/cover;
     padding: 11em 0 3.5em;
   }
+}
+
+.reason__inner {
+  position: relative;
 }
 
 .reason__title {
@@ -502,26 +525,13 @@ img {
   }
 }
 
-.reason__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  opacity: .06;
-  z-index: 2;
-}
-
 .products__inner {
   max-width: 940px;
 }
 
 @media screen and (max-width: 767px) {
   .products__inner {
-    max-width: 480px;
-    padding: 0 3.5em;
+    max-width: 340px;
   }
 }
 
@@ -676,6 +686,10 @@ img {
 
 .news__button-wrapper {
   text-align: center;
+}
+
+.motto {
+  margin-bottom: 3em;
 }
 
 .motto-contents {
