@@ -199,6 +199,11 @@ $layer: (
     text-transform: capitalize;
     display: block;
     line-height: 1.6875;
+    transition: all .3s;
+
+    &:hover{
+        color: $primary-color;
+    }
 }
 
 // ハンバーガーメニュー
