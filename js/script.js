@@ -21,16 +21,12 @@ $(function () {
         if($(this).hasClass('open')) {
             $(this).removeClass('open');
             $('.hamberger-menu').removeClass('open');
-            $('.overlay').removeClass('open');
-            $('body').removeClass('fixed');
 
 
         // メニューを開く
         } else {
             $(this).addClass('open');
             $('.hamberger-menu').addClass('open');
-            $('.overlay').addClass('open');
-            $('body').addClass('fixed');
         }
     });
 });
