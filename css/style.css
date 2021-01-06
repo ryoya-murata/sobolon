@@ -1138,13 +1138,15 @@ img {
 
 .footer__sns-icon {
   color: #3EA1D1;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .footer__sns-link {
   display: block;
 }
 
-.footer__sns-link:hover {
+.footer__sns-link:hover .footer__sns-icon {
   opacity: 0.7;
 }
 

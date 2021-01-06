@@ -1093,12 +1093,13 @@ $layer: (
 
 .footer__sns-icon{
     color: $primary-color;
+    transition: all .3s;
 }
 
 .footer__sns-link{
     display: block;
 
-    &:hover{
+    &:hover .footer__sns-icon{
         opacity: 0.7;
     }
 }
