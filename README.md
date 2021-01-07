@@ -1,4 +1,4 @@
-# Name（リポジトリ/プロジェクト/OSSなどの名前）
+# Name
 
 sobolon
  
@@ -12,11 +12,10 @@ sobolon
 # Author
  
 * Ryoya
-* University
 * ryoya.working@gamil.com
  
 # License
-/*!
+/*
  * jQuery JavaScript Library v3.5.1
  * http://jquery.com/
  *
