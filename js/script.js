@@ -65,7 +65,7 @@ $(document).ready(function () {
             $submit.prop('disabled', false)
             $submit.addClass('button--active')
         } else {
-            $submit.prop('disabled',prop)
+            $submit.prop('disabled',true)
             $submit.removeClass('button--active')
         }
     })
